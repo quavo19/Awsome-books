@@ -2,16 +2,16 @@ const book = [];
 function CreateBook(titleValue, authorValue) {
   this.title = titleValue;
   this.author = authorValue;
-};
+}
 const pushBook = () => {
   const titleValue = document.getElementById('Title').value;
   const authorValue = document.getElementById('Author').value;
   const theBook = new CreateBook(titleValue, authorValue);
   book.push(theBook);
-  console.log(book);
 };
 const bookList = document.querySelector('.books-list');
 const createBook = () => {
+  bookList.innerHTML = ' ';
   for (let i = 0; i < book.length; i += 1) {
     const title = document.createElement('p');
     title.innerText = book[i].title;
