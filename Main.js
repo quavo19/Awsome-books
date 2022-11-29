@@ -12,7 +12,10 @@ const pushBook = () => {
   const authorValue = document.getElementById('Author').value;
   const id = book.length;
   const theBook = new CreateBook(titleValue, authorValue, id);
-  book.push(theBook);
+  // eslint-disable-next-line eqeqeq
+  if (titleValue != '' || authorValue != '') {
+    book.push(theBook);
+  }
 };
 
 const bookList = document.querySelector('.books-list');
@@ -66,5 +69,5 @@ addBtn.addEventListener('click', () => {
   window.location.reload();
 });
 
-book = JSON.parse(localStorage.getItem('book')) || [];
+book = JSON.parse(localStorage.getItem('book'));
 createBook();
