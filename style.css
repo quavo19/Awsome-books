@@ -73,7 +73,17 @@ body {
   padding-left: 30px;
 }
 
+.contact-details ul li {
+  padding-bottom: 10px;
+}
+
 .books-list {
   border: 2px solid;
+}
+
+.books-list div {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
 }
