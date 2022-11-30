@@ -31,6 +31,11 @@ body {
   gap: 20px;
 }
 
+.line {
+  border-right: 2px solid;
+  height: 30px;
+}
+
 .nav-list ul li a {
   text-decoration: none;
   color: black;
@@ -82,8 +87,15 @@ body {
 }
 
 .books-list div {
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+}
+
+#even {
+  background-color: rgb(110, 100, 89);
+}
+
+#odd {
+  background-color: purple;
 }
