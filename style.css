@@ -16,13 +16,11 @@ body {
 .nav-bg {
   display: flex;
   align-items: baseline;
-  justify-content: space-around;
-  width: 100vw;
-  padding-bottom: 20px;
+  justify-content: space-between;
   width: 90%;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 10px 50px;
   border: 2px solid;
+  margin-top: 20px;
 }
 
 .nav-list ul {
@@ -68,6 +66,7 @@ body {
   width: 90vw;
   border: 2px solid;
   padding: 20px 0 20px 20px;
+  margin-bottom: 20px;
 }
 
 .info {
