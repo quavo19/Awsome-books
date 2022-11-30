@@ -50,15 +50,16 @@ body {
 
 #Author,
 #Title {
-  width: 90%;
+  width: 300px;
   height: 35px;
   border: 2px solid black;
 }
 
 #Add-Button {
-  width: 40%;
+  width: 70px;
   height: 30px;
   background-color: purple;
+  margin-left: 230px;
 }
 
 .footer {
