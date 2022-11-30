@@ -45,6 +45,7 @@ body {
   flex-direction: column;
   gap: 25px;
   width: 50%;
+  height: 100%;
 }
 
 #Author,
