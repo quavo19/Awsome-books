@@ -22,17 +22,14 @@ const bookList = document.querySelector('.books-list');
 const createBook = () => {
   bookList.innerHTML = ' ';
   for (let i = 0; i < book.length; i += 1) {
-    const title = document.createElement('p');
-    title.innerText = book[i].title;
-    bookList.append(title);
-
-    const author = document.createElement('p');
-    author.innerText = book[i].author;
-    bookList.append(author);
-
+    const individualBook = document.createElement('div');
+    bookList.append(individualBook);
+    const bookDetails = document.createElement('p');
+    bookDetails.innerText = `"${book[i].title}" By ${book[i].author}`;
+    individualBook.append(bookDetails);
     const removeBtn = document.createElement('button');
     removeBtn.innerText = 'Remove';
-    bookList.append(removeBtn);
+    individualBook.append(removeBtn);
     removeBtn.id = book[i].id;
     const removeBook = () => {
       const target = removeBtn.id;
@@ -54,9 +51,6 @@ const createBook = () => {
       store();
       window.location.reload();
     });
-
-    const line = document.createElement('hr');
-    bookList.append(line);
   }
 };
 const store = () => {
