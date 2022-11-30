@@ -23,6 +23,11 @@ const createBook = () => {
   bookList.innerHTML = ' ';
   for (let i = 0; i < book.length; i += 1) {
     const individualBook = document.createElement('div');
+    if (book[i].id % 2 === 0) {
+      individualBook.id = 'even';
+    } else {
+      individualBook.id = 'odd';
+    }
     bookList.append(individualBook);
     const bookDetails = document.createElement('p');
     bookDetails.innerText = `"${book[i].title}" By ${book[i].author}`;
