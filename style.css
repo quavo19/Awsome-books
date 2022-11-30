@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
 }
 
 body {
@@ -53,12 +54,14 @@ body {
   width: 90%;
   height: 35px;
   border: 2px solid black;
+  padding: 3px;
 }
 
 #Add-Button {
   width: 40%;
   height: 30px;
-  background-color: purple;
+  background-color: rgb(135, 1, 202);
+  color: white;
 }
 
 .footer {
@@ -93,9 +96,33 @@ body {
 }
 
 #even {
-  background-color: rgb(110, 100, 89);
+  background-color: rgb(227, 220, 212);
+  color: rgb(135, 1, 202);
 }
 
 #odd {
-  background-color: purple;
+  background-color: rgb(135, 1, 202);
+  color: rgb(227, 220, 212);
+}
+
+.odd,
+.even {
+  background-color: #9e7bab;
+  height: 30px;
+  padding: 5px;
+  color: white;
+}
+
+.awesome-books {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.awesome-books h1 {
+  text-align: center;
+}
+
+.vanish {
+  display: none;
 }
