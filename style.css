@@ -99,3 +99,23 @@ body {
 #odd {
   background-color: purple;
 }
+
+.new-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-book h1 {
+  padding-bottom: 70px;
+}
+
+@media only screen and (max-width: 1200px){
+  .Books-Container {
+    width: 90%;
+  }
+
+  .nav-bg {
+    padding: 0 !important;
+  }
+}
