@@ -2,13 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
 }
 
 body {
+  font-family: sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 15%;
   align-items: center;
   height: 100vh;
+}
+
+.nav-bg {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px 50px;
+  border: 2px solid;
+  margin-top: 20px;
+}
+
+.nav-list ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.line {
+  border-right: 2px solid;
+  height: 30px;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 .Books-Container {
@@ -16,4 +45,108 @@ body {
   flex-direction: column;
   gap: 25px;
   width: 50%;
+  height: 100%;
+}
+
+#Author,
+#Title {
+  width: 300px;
+  height: 35px;
+  border: 2px solid black;
+  padding: 3px;
+}
+
+#Add-Button {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(135, 1, 202);
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 90vw;
+  border: 2px solid;
+  padding: 20px 0 20px 20px;
+  margin-bottom: 20px;
+}
+
+.info {
+  padding-bottom: 30px;
+}
+
+.contact-details ul {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+.contact-details ul li {
+  padding-bottom: 10px;
+}
+
+.books-list {
+  border: 2px solid;
+}
+
+.books-list div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#even {
+  background-color: rgb(227, 220, 212);
+  color: rgb(135, 1, 202);
+}
+
+#odd {
+  background-color: rgb(135, 1, 202);
+  color: rgb(227, 220, 212);
+}
+
+.odd,
+.even {
+  background-color: #9e7bab;
+  height: 30px;
+  padding: 5px;
+  color: white;
+}
+
+.awesome-books {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.awesome-books h1 {
+  text-align: center;
+}
+
+.new-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-book h1 {
+  padding-bottom: 70px;
+}
+
+.vanish {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Books-Container {
+    width: 90%;
+  }
+
+  .nav-bg {
+    padding: 0 !important;
+  }
+
+  .vanish {
+    display: none;
+  }
 }
