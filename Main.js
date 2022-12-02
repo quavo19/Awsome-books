@@ -21,7 +21,7 @@ const pushBook = () => {
 const bookList = document.querySelector(".books-list");
 const createBook = () => {
   bookList.innerHTML = " ";
-  book = JSON.parse(localStorage.getItem("book"));
+  book = JSON.parse(localStorage.getItem("book")) || [];
 
   for (let i = 0; i < book.length; i += 1) {
     const individualBook = document.createElement("div");
@@ -76,7 +76,7 @@ addBtn.addEventListener("click", () => {
   window.location.reload();
 });
 
-book = JSON.parse(localStorage.getItem("book"));
+book = JSON.parse(localStorage.getItem("book")) || [];
 createBook();
 
 const homePage = () => {
