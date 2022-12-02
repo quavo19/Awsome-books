@@ -21,6 +21,8 @@ const pushBook = () => {
 const bookList = document.querySelector(".books-list");
 const createBook = () => {
   bookList.innerHTML = " ";
+  book = JSON.parse(localStorage.getItem("book"));
+
   for (let i = 0; i < book.length; i += 1) {
     const individualBook = document.createElement("div");
     if (book[i].id % 2 === 0) {
@@ -63,6 +65,7 @@ const createBook = () => {
     });
   }
 };
+
 const store = () => {
   localStorage.setItem("book", JSON.stringify(book));
 };
@@ -136,4 +139,9 @@ toAddNew.addEventListener("click", () => {
 const toContact = document.querySelector(".contact-link");
 toContact.addEventListener("click", () => {
   contactArea();
+});
+
+const tolist = document.querySelector(".list");
+tolist.addEventListener("click", () => {
+  homePage();
 });
