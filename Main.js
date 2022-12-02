@@ -131,6 +131,11 @@ toHome.addEventListener("click", () => {
   homePage();
 });
 
+const Home = document.querySelector(".Home");
+Home.addEventListener("click", () => {
+  homePage();
+});
+
 const toAddNew = document.querySelector(".add-new");
 toAddNew.addEventListener("click", () => {
   addBookkkkk();
